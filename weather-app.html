@@ -64,7 +64,7 @@
         event.preventDefault();
         // OpenWeather API
         const endPoint = "https://api.openweathermap.org/data/2.5/weather?q=";
-        const apiKey = "&APPID=bb0f0133260f3a93e9439d9f09c23e6a";
+        const apiKey = "INSERT YOUR OPENWEAHTER API KEY HERE";
 
         const formData = new FormData(form);
         const location = formData.get("location-input");
@@ -103,8 +103,8 @@
       (function () {
         
         const options = {
-          appId: 'plY1U67F3EQU',
-          apiKey: 'fc3fb9caf85157aea427931c2f6b91b1',
+          appId: 'INSERT YOUR ALGOLIA PLACES APP ID HERE',
+          apiKey: 'INSERT YOUR ALGOLIA PLACES API KEY HERE',
           container: document.querySelector('#location-input'),
           templates: {
             value: function (suggestion) { return `${suggestion.name}, ${(suggestion.countryCode).toUpperCase()}`; }
